@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      /* border-collapse: collapse; */
+      border-spacing: 5px;
+    }
+
+    .stitched {
+      width: 200px;
+      padding: 20px;
+      margin: 10px;
+      background: rgb(1, 46, 62);
+      color: white;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.3em;
+      border: 2px dashed #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 0 8px rgb(1, 46, 62);
+      text-shadow: -1px -1px red;
+      font-weight: normal;
+    }
+
+    p::first-line {
+      background-color: blue;
+    }
+
+    p::first-letter {
+      color: aqua;
+    }
+
+    .bluebutton {
+      width: 200px;
+      padding: 20px;
+      margin: 10px;
+      background: rgb(1, 46, 62);
+      color: white;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.3em;
+      border-radius: 25px;
+    }
+
+    .gallary img {
+      height: 75px;
+      width: 75px;
+      border: 1px solid black;
+      border-radius: 25px;
+      list-style-type: none;
+    }
+
+    #blur {
+      font-size: 40px;
+      color: transparent;
+      text-shadow: 0 0 8px #000;
+    }
+    .btn {
+      border: none;
+      border-radius: 5px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #282a35;
+      color: white;
+      position: relative;
+    }
+
+    .ribbon {
+      width: 60px;
+      font-size: 14px;
+      padding: 4px;
+      position: absolute;
+      right: -25px;
+      top: -12px;
+      text-align: center;
+      border-radius: 5px;
+      transform: rotate(20deg);
+      background-color: #ff9800;
+      color: white;
+    }
+
+    nav {
+            background-color: green;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 34px 36px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 34px 36px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: green;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: green;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Quick</th>
+        <th colspan="2">Box Fox</th>
+        <th>Jumps</th>
+      </tr>
+      <tr>
+        <th rowspan="3">OVER THE</th>
+        <td>lazy</td>
+        <td>dog</td>
+        <td>and</td>
+      </tr>
+
+      <tr>
+        <td>then</td>
+        <td>it</td>
+        <td>all</td>
+      </tr>
+      <tr>
+        <td>pay to a lion</td>
+      </tr>
+    </table>
+    <br />
+    <!-- stitched -->
+    <div class="stitched">Click Me</div>
+    <br />
+    <!-- paragraph -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, adipisci
+      rem mollitia tempora quia consequatur impedit ea quibusdam aliquid eos et
+      beatae suscipit soluta saepe libero facilis velit eveniet. Optio debitis
+      in, nisi velit eius modi minus perspiciatis repellendus eum odio sequi
+      voluptatibus corporis et, repellat quae voluptatum sapiente quas?
+    </p>
+    <br />
+    <!-- <button -->
+    <button class="bluebutton">Subcribe Me</button>
+    <br />
+    <!-- gallary -->
+    <div class="gallary">
+      <img src="./apple.jpg" />
+      <img src="./banana.webp" />
+      <img src="./mango.jpg" />
+      <br />
+      <img src="./orange.webp" />
+      <img src="./papaya.jpg" />
+      <img src="./mumbai.jpg" />
+    </div>
+
+    <br />
+    <div id="blur">Blurry Text</div>
+
+    <br />
+
+    <button class="btn">
+      Best value pack <span class="ribbon">Sale!sale!</span>
+    </button>
+    <br>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <div class="dropdown">
+          <button class="dropbtn">Products</button>
+          <div class="dropdown-content">
+              <a href="#engineering">Engineering</a>
+              <a href="#telecom">Telecom</a>
+              <a href="#energy">Energy</a>
+              <a href="#finance">finance</a>
+              <a href="#consultancy">consultancy</a>
+          </div>
+      </div>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+  </nav>
+
+
+  <br/>  
+
+  <div class="container">
+    <h2>Travel Reservation Form</h2>
+    <form>
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tourPackage">Select Tour Package *</label>
+        <select id="tourPackage" name="tourPackage" required>
+            <option value="goa">Goa</option>
+            <option value="goa">Mumbai</option>
+            <option value="goa">Manali</option>
+            <option value="goa">Chennai</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="arrivalDate">Arrival Date *</label>
+        <input type="date" id="arrivalDate" name="arrivalDate" required>
+
+        <label for="numberOfPersons">Number of Persons *</label>
+        <input type="number" id="numberOfPersons" name="numberOfPersons" required>
+
+        <label>What would you want to avail? *</label>
+        <input type="checkbox" id="boarding" name="services" value="boarding"> Boarding
+        <input type="checkbox" id="fooding" name="services" value="fooding"> Fooding
+        <input type="checkbox" id="sightSeeing" name="services" value="sightSeeing"> Sight Seeing
+
+        <label for="discountCode">Discount Coupon Code</label>
+        <input type="text" id="discountCode" name="discountCode">
+
+        <label>Terms and Conditions *</label>
+        <input type="radio" id="agree" name="terms" value="agree" required> I agree
+        <input type="radio" id="disagree" name="terms" value="disagree" required> I disagree
+
+        <button type="submit">Complete Reservation</button>
+    </form>
+</div>
+  </body>
+</html>

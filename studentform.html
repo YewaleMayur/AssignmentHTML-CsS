@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #1b41d7c0;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+    }
+
+    button[type="reset"]:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="50 character only">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+
+    <label>Gender:</label>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="Address">Address</Address></label>
+    <input type="text" id="Address" name="Address" required>
+
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" name="pincode" required>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <label>Hobbies:</label>
+    <label for="drawing">Drawing</label>
+    <input type="checkbox" id="drawing" name="hobbies[]" value="drawing">
+    <label for="singing">Singing</label>
+    <input type="checkbox" id="singing" name="hobbies[]" value="singing">
+    <label for="dancing">Dancing</label>
+    <input type="checkbox" id="dancing" name="hobbies[]" value="dancing">
+    <label for="sketching">Sketching</label>
+    <input type="checkbox" id="sketching" name="hobbies[]" value="sketching">
+
+    <label for="qualification">Qualification:</label>
+    <label for="highSchool">High School</label>
+    <input type="checkbox" id="highSchool" name="qualification[]" value="highSchool">
+    <label for="higherSchool">Higher Secondary</label>
+    <input type="checkbox" id="higherSchool" name="qualification[]" value="higherSchool">
+
+    <label>Courses Applied For:</label>
+    <label for="bca">BCA</label>
+    <input type="checkbox" id="bca" name="courses[]" value="bca">
+    <label for="bcom">B.Com</label>
+    <input type="checkbox" id="bcom" name="courses[]" value="bcom">
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>
